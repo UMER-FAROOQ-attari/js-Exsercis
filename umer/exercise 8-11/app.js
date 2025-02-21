@@ -270,3 +270,27 @@ if(karachi_temperature >= 40 ){
 }if(karachi_temperature >= 10 && karachi_temperature < 20){
     document.write("OMG! Today’s weather is so Cool.")
 }
+// 17. Write a program to create a calculator for +,-,*, / & % using if
+// statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+let first_number = +prompt("Enter the first number:");
+let second_number = +prompt("Enter the second number:")
+let Operation = prompt("Select an operation (+, -, , /, %):")
+if(Operation === "+"){
+    document.write(first_number + Operation + second_number + " is " + (first_number + second_number) )
+}
+if(Operation === "*" || Operation === "X" || Operation === "x"){
+    document.write(first_number + Operation + second_number + " is " + (first_number * second_number) )
+}
+if(Operation === "-"){
+    document.write(first_number + Operation + second_number + " is " + (first_number - second_number) )
+}
+if(Operation === "/"){
+    document.write(first_number + Operation + second_number + " is " + (first_number / second_number) )
+}
+if(Operation === "%"){
+    document.write(first_number + Operation + second_number + " is " + (first_number % second_number) )
+}
