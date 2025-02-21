@@ -209,3 +209,64 @@ document.write("<br> " + " Discount Price is " + (total_price - (total_price / 1
 // answer”.
 // b. If the guessed number +1 is the secret number, show
 // “Close enough to the correct answer”.
+let secret_number = 7;
+let user_guess = +prompt("Guess the secret number (between 1 and 10)")
+if (user_guess === secret_number){
+    document.write("Bingo! Correct answer")
+}
+if (user_guess + 1 === secret_number){
+    document.write("Close enough to the correct answer")
+}
+// 12. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number is
+// divisible by 3.
+let divisible_3 = +prompt("📝 Please enter a number to check if it is divisible by 3: ");
+if (divisible_3 % 3  ===  0){
+    document.write("tis number divided by 3")
+};
+// 13. Names & Total scores of two teams are taken as input. Write
+// a program that shows which team has won the game or show if
+// there is a tie. (Team A or Team B)
+let team1 = prompt("Enter the score of team 1");
+let team2 = prompt("Enter the score of team 2");
+if(team1 < team2 ) {
+    document.write("team 2 won the match")
+}
+if(team1 > team2 ) {
+    document.write("team 1 won the match")
+}
+// 14. Take a string, a number and a Boolean in three variables.
+// Write a program that checks the type of variables & responds
+// accordingly. Like :
+let user_string = prompt("Pleas enter a String");
+let user_number = +prompt("pleas enter a number");
+let user_boolean = prompt("Pleas enter (true or fales)");
+document.write(user_string + " is a " + typeof user_string);
+document.write(user_number + " is a " + typeof user_number);
+document.write(user_boolean + " is a " + typeof user_boolean);
+// 15. Write a program that checks whether the given input is an
+// even number or an odd number.
+let User_number_EO = prompt("📌 Please enter a number to check if it is Even or Odd:")
+if (User_number_EO % 2 === 0){
+    document.write("Your number is even!")
+}
+if (User_number_EO % 2 ==! 0){
+    document.write("Your number is odd!")
+}
+// 16. Weather in Karachi nowadays is too cool, write a program
+// that takes temperature as input and shows a message based on
+// following criteria
+// a. T > 40 then “It is too hot outside.”
+// b. T > 30 then “The Weather today is Normal.”
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+let karachi_temperature = prompt("📌 Please enter the current temperature (°C) to check the weather condition:")
+if(karachi_temperature >= 40 ){
+    document.write("It is too hot outside.")
+}if(karachi_temperature >= 30 && karachi_temperature < 40){
+    document.write("The Weather today is Normal.")
+}if(karachi_temperature >= 20 && karachi_temperature < 30){
+    document.write("Today’s Weather is cool.")
+}if(karachi_temperature >= 10 && karachi_temperature < 20){
+    document.write("OMG! Today’s weather is so Cool.")
+}
