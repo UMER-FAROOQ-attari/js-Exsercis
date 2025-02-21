@@ -142,3 +142,70 @@ if (false){
 if("car" < "cat"){
  alert("car is smaller than cat");
 }
+// 9. Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute grade as
+// per following table:
+// Percentage % Grade Remarks
+// Greater than or equal to 80 A-one Excellent
+// Greater than or equal to 70 A Good
+// Greater than or equal to 60 B You need to improve
+// Less than 60 Fail Sorry
+// Show the total marks, marks obtained, percentage, grade &
+// remarks like:
+let total_marks = prompt("Pleas Enter total marks");
+let obtained_marks = prompt("Pleas Enter obtained marks ");
+let percentage = obtained_marks / total_marks * 100;
+document.write("<br> " +"<h1>Marks Sheet </h1>")
+document.write("<br> " +"<br> " +"<br> " + "Total marks : "+ total_marks);
+document.write("<br> " + "Marks obtained : " + obtained_marks);
+document.write("<br> " + "Percentage : " + percentage + "%");
+if (percentage >= 80 ){
+    document.write("<br> " + "Grade : A-one");
+    document.write("<br> " + "Remarks : Excellent")
+}
+if (percentage >= 70 && percentage < 80 ){
+    document.write("<br> " + "Grade : A");
+    document.write("<br> " + "Remarks : Good")
+}if (percentage >= 60 && percentage < 70 ){
+    document.write("<br> " + "Grade : B");
+    document.write("<br> " + "Remarks : You need to improve")
+}if (percentage <= 60 ){
+    document.write("<br> " + "Grade : Fail");
+    document.write("<br> " + "Remarks : Sorry")
+}   
+// 10. Write a program to implement checkout process of a
+// shopping cart system for an e-commerce website. Take input
+// from users, the following:
+// a. Name of item1
+// b. Name of item2
+// c. Price of item 1
+// d. Price of item 2
+// e. Ordered quantity of item 1
+// f. Ordered Quantity of item 2
+// g. Shipping charges
+// Compute the total cost. If the total cost is above 2000 PKR ,
+// offer them 10% discount & show the receipt in your browser.
+let item1 = prompt("Please enter the name of the first item:");
+let item1_quantity = prompt("Please enter the quantity of the first item:");
+let item1_price = prompt("Please enter the price of the first item (PKR):")
+let item2 = prompt("Please enter the name of the second  item");
+let item2_quantity = prompt("Please enter the quantity of the second item:");
+let item2_price = prompt("Please enter the price of the second item (PKR):")
+let shopping_charges = 250;
+let total_price = item1_price * item1_quantity + item2_price * item2_quantity + shopping_charges;
+document.write("<br> " +"<h1>Shoping Cart </h1>")   
+document.write("<br> " +" Price of " + item1 + " is " + item1_price );
+document.write("<br> " +" Quantity of " + item1 + " is " + item1_quantity);
+document.write("<br> " + "Price of " + item2 + " is " + item2_price);
+document.write("<br> " +" Quantity of " + item2 + " is " + item2_quantity);
+document.write("<br> " + "Shiping Charges " + shopping_charges);
+document.write("<br> " +"<br> " +"<br> " + " Total cost of your oder is " + total_price  + "PKR");
+document.write("<br> " + " Discount Price is " + (total_price - (total_price / 100 * 10)));
+// 11. Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
