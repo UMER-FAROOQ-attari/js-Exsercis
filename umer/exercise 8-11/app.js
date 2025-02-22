@@ -294,3 +294,95 @@ if(Operation === "/"){
 if(Operation === "%"){
     document.write(first_number + Operation + second_number + " is " + (first_number % second_number) )
 }
+// 18. Write a program that takes user input day name. If the day is
+// Monday, Tuesday, Wednesday, Thursday or Friday, then show
+// “It’s a week day”. If the day is Saturday then show “It’s
+// weekend”. If the day is Sunday then show “Yay! It’s a holiday”.
+let today = prompt("Please enter the day name:");
+if (today === "Saturday" ){
+    document.write("It’s weekend");
+};
+if (today === "Sunday" ){
+    document.write("Yay! It’s a holiday")
+}
+if ( today === "Monday" || today === "Tuesday" || today === "Wednesday" || today === "Tursday" || today === "Friday"   ){
+    document.write("It’s a week day")
+}
+// 19. Write a program that takes input user’s score, if it’s greater
+// than 50, say “You are passed”. Otherwise, show “Try again!”
+let user_score = prompt("Pleas enter your score : ");
+if (user_score > 50){
+    document.write("You are passed")
+}
+if (user_score <= 50){
+    document.write("Try again!")
+}
+// 20. Write a program that:
+// a. takes 2 numbers.
+// b. tells whichever number is the greater (higher) number.
+// c. tells if they are equal
+// Show the output to make sure it works (e.g. "The greater
+// number of 5 and 10 is 10.").
+let number1 = prompt("Enter the first number:");
+let number2 = prompt("Enter the second number:");
+if (number1 > number2){
+ document.write("The greater number of " + number1 + " and " + number2 +" is " + number1)   
+}
+if (number1 < number2){
+    document.write("The greater number of " + number1 + " and " + number2 +" is " + number2)   
+   }
+if (number1 === number2){
+    document.write("The numbers are equal")   
+}
+// 21. The Translator:
+// Write a program that:
+// a. takes 1 input, a language code (e.g. "es", "de", "en")
+// b. tells "Hello, World" for the given language, for atleast 3
+// languages. It should default to returning English.
+// (Hint: use translate.google.com to check the translation of
+// hello world in different languages)
+// Show the result to make sure it works.
+let language = prompt("Please enter the language code (e.g. 'ur' for urdu , puj for punjabi, ar for arabic ,es' for Spanish, 'de' for German, 'en' for English):")
+if (language === "en"){
+    alert("hello world")
+}
+if (language === "ur"){
+    alert("ہیلو دنیا")
+}
+if (language === "puj"){
+    alert("ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ ਦੁਨਿਆ")
+}
+if (language === "ar"){
+    alert("مرحبا بالعالم")
+}
+if (language === "es"){
+    alert("Hola Mundo")
+}
+if (language === "de"){
+    alert("Hallo Welt")
+}
+// 22. Write a program to take input a number & tell whether it’s a
+// positive or negative number
+let number_whether = +prompt("Pleas enter a number");
+if (number_whether > 0){
+    document.write("positive number")
+}
+if (number_whether < 0){
+    document.write("negative number")
+}
+if ( number_whether === 0){
+    document.write("Zero")
+}
+// 23. The Pluralizer: Write a program that:
+// a. takes 2 inputs, a noun and a number.
+// b. tells the number and pluralized form, like "5 cats" or "1
+// dog".
+// Run the program for a few
+let number_1 = prompt("Pleas enter a number : ");
+let noun = prompt("Pleas enter a noun : ");
+if (number_1 > 1){
+    alert(number_1 + noun + "s")
+}
+if (number_1 <= 1){
+    alert(number_1 + noun )
+}
