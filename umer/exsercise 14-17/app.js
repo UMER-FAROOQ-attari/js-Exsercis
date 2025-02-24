@@ -52,4 +52,34 @@ document.write("<h1>Favorite Cars </h1>"+"<br>" +"<br>");
 document.write("<br>"+"First index of the array : "+ car.indexOf("Audi")) 
 document.write("<br>"+ "Car at fist index of the array : "+ car[0] );
 document.write("<br>"+ "Last index of the arry ;" + car[car.length -1]);
-document.write("<br>"+ "Car at last index of the array : " + (car.length -1))
+// document.write("<br>"+ "Car at last index of the array : " + (car.length -1))
+
+// 1. Create an Object:
+// Create an object called car with properties: make, model, year, and color. Assign appropriate values to each property.
+
+// 2. Accessing Object Properties:
+// Given the following object:
+
+// const user = {
+//     name: "John",
+//     age: 30,
+//     email: "john.doe@example.com"
+// };
+// Write code to print out the user's name and email to the console.
+
+// 3. Update Object Property:
+// Using the object car you created earlier, update the color property to red and log the updated object to the console.
+
+// 4. Adding New Properties to an Object:
+// Add a new property price to the car object, and assign it a value of 20000. Print the updated object.
+
+// 5. 
+// Create an object called person with properties firstName and lastName. print first name + last name.
+// 7. Selecting Multiple Elements:
+// Write a JavaScript function that selects all the paragraphs (<p>) on a webpage and change their text to something else.
+
+// 8. Looping Through NodeList:
+// Using document.querySelectorAll(), select all the list items (<li>) with the class menu-item and log each one to the console.
+
+// 9. Manipulating Text Content:
+// Select all the <h2> tags on the page and change their text content to "Updated Title".
