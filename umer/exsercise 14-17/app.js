@@ -52,7 +52,7 @@ document.write("<h1>Favorite Cars </h1>"+"<br>" +"<br>");
 document.write("<br>"+"First index of the array : "+ car.indexOf("Audi")) 
 document.write("<br>"+ "Car at fist index of the array : "+ car[0] );
 document.write("<br>"+ "Last index of the arry ;" + car[car.length -1]);
-// document.write("<br>"+ "Car at last index of the array : " + (car.length -1))
+document.write("<br>"+ "Car at last index of the array : " + (car.length -1))
 
 // 1. Create an Object:
 // Create an object called car with properties: make, model, year, and color. Assign appropriate values to each property.
