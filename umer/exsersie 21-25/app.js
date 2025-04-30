@@ -54,3 +54,63 @@ document.write(`<br> Value : ${sto} <br> type : ${typeof(sto)} <br> Value : ${ne
 let URo = prompt("write a URL ")
 let dom = URo.slice(3,(URo.length))
 document.write(`<br>URL :${URo} <br> Domain : ${dom}`) 
+// 11. Write a program that takes user input. Convert and show the
+// input in capital letters.
+let word = prompt(`enter a world is small letter`)
+let cap_word = word.toUpperCase()
+document.write(`
+   <br> User input : ${word}
+    <br> Upper case : ${cap_word}`)
+// 12. Write a program that takes user input. Convert and show the
+// input in small letters.
+let wordu = prompt(`enter a world in upper case`)
+let sammll = wordu.toLowerCase()
+document.write(` <br>User input : ${wordu}
+    <br>Lower case : ${sammll} `)
+// 13. Write a program that takes user input. Convert and show the
+// input in title case.
+let title_case = prompt(`enter a world in title case`)
+let first_w = title_case.slice(0,1)
+let remain_w = title_case.slice(1)
+let first_wo = first_w.toUpperCase()
+let remain_wo = remain_w.toLowerCase()
+document.write(` <br> User input : ${title_case} 
+    <br> Tiltle case : ${first_wo+remain_wo} `)
+// 14. Write a program that converts the variable num to string.
+//  var num = 35.36 ;
+// Remove the dot to display “3536” display in your browser.
+let numb = 35.36;
+let gum = numb.toString().replace(".","")
+document.write(`<br>number : ${numb}
+    <br> Result : ${gum}`)
+// 15. Write a program to display the value of x in your browser if a=”3”
+// and b=”3”?
+let a = "3" ;
+let b = "3" ;
+let a_b = a + b;
+document.write(`<br> a is : ${a}
+    <br> b is : ${b}
+    <br>a + b is ${a_b} `)
+// 16. Write a program to display the value of y in your browser if a=”3”
+// and b=”3”?
+//  y = a - b;
+let ayb = a-b;
+document.write(`<br> a is : ${a} 
+    <br> b is : ${b}
+    <br> a - b is ${ayb}`)
+//     17. Write a program to take user input and store username in a
+// variable. If the username contains any special symbol among
+// [@ . , !], prompt the user to enter a valid username. For
+// character codes of [@ . , !], refer to ASCII table at the end of
+// this document.
+// Note:
+// ASCII code of ! is 33
+// ASCII code of , is 44
+// ASCII code of . is 46
+// ASCII code of @ is 64
+let username = prompt("Enter Your name")
+for (i = 0 ; i < username.length ; i++){
+    if (username[i] == "!"   ||  username[i] == "," || username[i] == "."   || username[i] == "@" ){
+        let username    = prompt("pleas Enter Your vailed name")
+    }
+}
