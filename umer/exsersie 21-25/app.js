@@ -108,9 +108,9 @@ document.write(`<br> a is : ${a}
 // ASCII code of , is 44
 // ASCII code of . is 46
 // ASCII code of @ is 64
-let username = prompt("Enter Your name")
+let username = prompt("pleas Enter Your name")
 for (i = 0 ; i < username.length ; i++){
     if (username[i] == "!"   ||  username[i] == "," || username[i] == "."   || username[i] == "@" ){
-        let username    = prompt("pleas Enter Your vailed name")
+        let username  = prompt("pleas Enter Your vailed name")
     }
-}
+}   
