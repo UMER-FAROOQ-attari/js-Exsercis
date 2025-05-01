@@ -109,8 +109,41 @@ document.write(`<br> a is : ${a}
 // ASCII code of . is 46
 // ASCII code of @ is 64
 let username = prompt("pleas Enter Your name")
-for (i = 0 ; i < username.length ; i++){
-    if (username[i] == "!"   ||  username[i] == "," || username[i] == "."   || username[i] == "@" ){
-        let username  = prompt("pleas Enter Your vailed name")
-    }
-}   
+let band_words = ["!",",",".","@"];
+let is_valid = true;
+for (i = 0 ; i< username.length ; i++){
+    band_words.includes(username[i])
+    is_valid = false
+}
+if (!is_valid){
+    let username = prompt("pleas Enter Your valid name")
+}
+else{
+    alert(" we save your  name")
+}
+// 18. You have an array
+//  A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an array.
+// After searching, prompt the user whether the given item is
+// found in the list or not.
+// Note: Perform case insensitive search. Whether the user enters
+// cookie, Cookie, COOKIE or coOkIE, program should inform
+// about its availability. Example
+let searc  = prompt("pleas enter your furit item") ;
+let furit = ["cake", "apple pie", "cookie", "chips", "patties"];
+let cec = searc.toLowerCase();
+let is_avial = false
+for ( i = 0 ; i< furit.length ; i++){
+    if (furit[i] == cec)
+    is_avial = true
+    break;
+    
+    
+}
+if (is_avial){
+    alert(`it is aivialabe`)
+}
+else{
+    alert(`it is not aivialabe`)
+}
+
