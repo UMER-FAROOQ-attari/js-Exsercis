@@ -129,21 +129,110 @@ else{
 // Note: Perform case insensitive search. Whether the user enters
 // cookie, Cookie, COOKIE or coOkIE, program should inform
 // about its availability. Example
-let searc  = prompt("pleas enter your furit item") ;
+let slect = prompt(` Pleas enter your furit item`)
 let furit = ["cake", "apple pie", "cookie", "chips", "patties"];
-let cec = searc.toLowerCase();
-let is_avial = false
-for ( i = 0 ; i< furit.length ; i++){
-    if (furit[i] == cec)
-    is_avial = true
-    break;
-    
-    
+let real = slect.toLowerCase()
+let is_found = false;
+for (i = 0 ; i < furit.length ; i++){
+    if (real == furit[i]){
+        is_found = true
+    }
 }
-if (is_avial){
-    alert(`it is aivialabe`)
+if (is_found){
+    alert(`this item is available  at ${furit.indexOf(real)} in our bakery`)
+} 
+else{
+alert(`this item is not available in our bakery`)
+}
+// 19. Write a program to take two input strings. Using string
+// comparison, tell which string is greater than other or if they
+// both are equal.
+let f_1 = prompt(`enter 1st string for comparison`)
+let s_2 = prompt(`enter 2nd string for comparison`)
+if (f_1 > s_2){
+    alert(`${f_1} is greater then ${s_2}`)
+}
+else if (f_1 < s_2){
+    alert(`${s_2} is greater then ${f_1}`)
+}
+else(
+    alert(`oho`)
+)
+// 20. Write a program to take password as an input from user. The
+// password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements,
+// prompt the user to enter a valid password.
+// For character codes of a-z, A-Z & 0-9, refer to ASCII
+// table at the end of this document.
+let pas = prompt(`Enter a password in 6 leter and mix leter & number and don't start form number `)
+let f1 = pas[0]
+let ah = false;
+let wh = false
+if (pas.length < 6){
+    alert(`pleas enter valid password`)
+}
+else if (!isNaN(f1)){
+    alert(`pleas enter valid password`)
 }
 else{
-    alert(`it is not aivialabe`)
-}
+for (i=0 ; i < pas.length ; i++){
+    if  ((pas[i] >= "a" && pas[i] <= "z" || pas[i] >= "A" && pas[i] <= "Z"  )  ){
+        ah = true;
+    }
+    else if (pas[i] >= "0" && pas[i] <= "9")
+    {
+        wh = true;
 
+    }
+}
+}
+ if (!(ah && wh)){
+    alert(`pleas enter valid password`)
+}
+else{
+    alert(`thankx`)
+}
+// 21. Write a program to convert the following string to an array
+// using string split method.
+//  var university = “University of Karachi”;
+// Display the elements of array in your browser.
+let nam = prompt(`enter universty name`)
+let arr = nam.split("")
+for (i=0 ; i<arr.length ;i++){
+    document.write(`${arr[i]} <br>`)
+}
+// 22. Write a program to display the last character of a user input.
+let wor = prompt(`enter a word`);
+let las = wor.length -1;
+let gas = wor.split("")
+let sod  = wor[las]
+document.write(sod)
+// 23. You have a string “The quick brown fox jumps over the lazy
+// dog”. Write a program to count number of occurrences of word
+// “the” in given string.
+let srt = ("The quick brown fox jumps over the lazy dog")
+let srto = srt.toLowerCase();
+let srta = srto.split(" ")
+let count = 0;
+for (i =0 ; i < srta.length ; i++){
+    if (srta[i] == "the" ){
+        count += 1
+    }
+}
+document.write(count)
+// 24. Write a program to count number of vowels & consonants in
+// given string
+//  var str = “Pakistan”;
+let of = ("pakisatn");
+let sp = of.split(" ")
+let wo = ["a","e","i","o","u"]
+let cont = 0;
+for (i=0;i<of.length; i++){
+    if (wo.includes(of[i])){
+        cont += 1
+    }
+}
+document.write(cont)
