@@ -39,3 +39,19 @@ document.write(`the absolute value of ${aval} is ${Math.abs(aval)}`)
 let rnumber = (Math.random() * 6) ;
 rnumber = Math.round(rnumber)
 document.write(`<br>${rnumber} <br> `);
+// 7. Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser.
+let htnmb = (Math.random() * 2);
+htnmb = (Math.ceil(htnmb))
+if (htnmb === 1){
+    document.write("head")
+}
+if (htnmb === 2 ){
+    document.write("tail")
+}
+// 8. Write a program that shows a random number between 1 and
+// 100 in your browser.
+let numb100 = (Math.random() * 99) + 1;
+numb100 = Math.round(numb100);
+document.write(`<br> random number between 1 to 100 is : ${numb100}` ) 
