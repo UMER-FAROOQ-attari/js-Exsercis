@@ -135,3 +135,157 @@ let new_style = function nafs(){
     return typeof nafs
 } 
 alert(new_style(5))
+// 16. Write a function that computes power of a number. E.g. 23
+// is 8. 
+let number_of_power = +prompt(`Enter a number`)
+let power_of_number = +prompt(`Enter power of the number`);
+function for_power(number,power){
+    let answer = 1;
+    for(let i=1; i<=power ; i++){
+        answer = number * answer;
+    }
+    return answer
+}
+const al_jawab = for_power(number_of_power,power_of_number);
+console.log(al_jawab)
+// 17. Write a function that simulates a dice & returns a random
+// dice value. 
+function dice(){
+      let number = Math.random();
+      number = (number * 6) + 1;
+      number = Math.floor(number);
+    return number
+    }
+const dana = dice();
+console.log(dana)
+// 18. Write a JavaScript function that reverse a number.
+// Example x = 32243;
+// EXPECTED OUTPUT : 34223 
+function reverse(number){
+    let arry = [];
+    number = number.toString()
+    for(let i =0; i<number.length ; i++){
+       arry.push(number[i])
+    }
+      arry.reverse()
+    arry = arry.join("")
+    return arry
+}
+const ulti = reverse(123456789);
+console.log(ulti);
+// 19. Write a JavaScript function that checks whether a passed
+// string is palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same
+// backward as forward, e.g., madam.
+let palindrome_num = prompt(`enter a word for check is a palindrom number or not`)
+function palindrome_check(word){
+    let arry =[];
+    for (let i =0 ;i<word.length;i++){
+        arry.push(word[i])
+    }
+    let revers_word = arry.reverse();
+    revers_word = revers_word.join('')
+    if( word === revers_word){
+        console.log(`yes its realy palindrome number`);
+    }
+    else{
+        console.log(`sorry its not palondrome number`)
+    }
+}
+palindrome_check(palindrome_num)
+
+// 20.	Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
+// EXAMPLE STRING : 'the quick brown fox' 
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+let sentance = prompt("enter a sentance for Cap")
+function lowertocaps(){
+    words = sentance.split(" ");
+     let cptlword = []
+      for (let i = 0;i< words.length ; i++){
+        let word = words[i];
+        let capword = word[0].toUpperCase() + word.slice(1)
+        cptlword.push(capword);
+
+
+      }
+      let answe = cptlword.join(" ")
+     return (answe)
+}
+let stn_answer = lowertocaps();
+console.log(stn_answer)
+
+// 21.	Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
+// EXAMPLE STRING : 'Web Development Tutorial' 
+// EXPECTED OUTPUT : 'Development'
+
+let check_largword = prompt("pleas  a sentence for check who word is capital");
+function check_word (){
+          let words =   check_largword.split(" ");
+          let long_word = "";
+          for(let i = 0 ; i < words.length; i++ ){
+            if (words[i].length > long_word.length ){
+                long_word = words[i]
+            
+            }
+          }
+  return (long_word)
+        }
+        const answer_long_word = check_word();
+        console.log(answer_long_word);
+        
+// 22.	Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. 
+
+// EXAMPLE STRING : 'The quick brown fox' 
+// EXPECTED OUTPUT : 5
+
+let vowels_words = prompt("pleas enter a sentane for count vowels letters")
+function count_vowels (){
+    
+    let words = vowels_words.split("")
+    let total_words = 0;
+    for(let i = 0 ; i<words.length;i++){
+     if (words[i] == "a" ||words[i] == "i" ||words[i] == "e" || words[i] == "o" ||words[i] == "u"){
+     total_words++;
+    }
+     }
+     return(total_words)
+}
+let anser_vowels =count_vowels();
+console.log(anser_vowels)
+
+// 23.	Write a JavaScript function which accepts an argument and returns the type. 
+// Note : There are six possible values that typeof returns: object, boolean, function, number, string, and undefined.
+let type_input = prompt("enter a input for check type");
+function type(){
+    let type_word ;
+  if(type_input == "true" || type_input == "false")     {
+   type_word = "Boolen"
+  }
+  else if(!isNaN(type_input)){
+   type_word = "Number"
+  }
+  else{
+   type_word = typeof(type_input)
+  }
+  return type_word
+
+}
+const type_answer = type();
+console.log(type_answer);
+// 24.	Write a JavaScript function to extract unique characters from a string. 
+// EXAMPLE STRING : "thequickbrownfoxjumpsoverthelazydog"
+// EXPECTED OUTPUT : "thequickbrownfxjmpsvlazydg"
+    let a_sentence = "my name is umer"
+    function repet(){
+        word = a_sentence.split("")
+        let newstan = [] ;
+        for(i=0;i<word.length;i++){
+            if(!newstan.includes(word[i])){
+            newstan.push(word[i])
+            }
+        }
+       
+        return newstan.join("")
+    }
+    let answer_repet = repet();
+    console.log(answer_repet)
