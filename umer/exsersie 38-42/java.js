@@ -104,3 +104,58 @@ let anse = indexnumber(wordsearch);
 document.write(`Index of '${wordsearch}' is: ${anse}`);
 // 6. Write a function to delete all vowels from a sentence. Assume
 // that the sentence is not more than 25 characters long.
+let sten = prompt("Pleas Enter a sentrance ...")
+function rmovevowels(sentence){
+  sentence = sentence.toLowerCase()
+  let arrtofsten = sentence.split("")
+  let anserarr = []
+  var i = 0;
+  let vowels = ["a","e","i","o","u"]
+  while(i < arrtofsten.length){
+    if (!vowels.includes(arrtofsten[i])){
+      anserarr.push(arrtofsten[i])
+    }
+    i++
+  }
+  
+  return anserarr.join("")
+}
+let answer = rmovevowels(sten);
+document.write(answer)
+// 7. Write a function with switch statement to count the number of
+// occurrences of any two vowels in succession in a line of text.
+// For example, in the sentence
+// FUNCTIONS, switch statements, while… do-while loops | JAVASCRIPT
+// Page 2 of 2
+// “Pleases read this application and give me gratuity”
+// Such occurrences are ea, ea, ui.
+let stens = prompt("Pleas Enter a sentence . .. ");
+function check2vowels(sentence){
+  sentence = sentence.toLowerCase();
+  let strtoary = sentence.split("");
+  let i = 0;
+  let vowels = ["a","e","i","o","u"]
+  
+  while(i < strtoary.length -1 ){
+  let firstch = sentence[i];
+  let secondch = sentence[i + 1];
+    switch(firstch){
+      case'a':
+      case'e':
+      case'i':
+      case'o':
+      case'u':
+      switch(secondch){
+      case'a':
+      case'e':
+      case'i':
+      case'o':
+      case'u':
+     alert(`Yes vowal word is use join ....`)  
+      break;
+    }
+      break;
+    }
+ i++ }
+}
+check2vowels(stens)
